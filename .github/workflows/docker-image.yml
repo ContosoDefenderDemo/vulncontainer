@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file ctf/CTF-web-to-system-01/Dockerfile --tag vuln
 
     - name: Endor Labs Scan
       uses: endorlabs/github-action@v1.1.4
